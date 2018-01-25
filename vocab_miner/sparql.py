@@ -114,8 +114,6 @@ def get_exact(name):
             uri = obj["result"]["items"][0]["_about"]
             preflabel = obj["result"]["items"][0]["prefLabel"]["_value"]
             return uri, preflabel, None
-        else:
-            return None, None, None
     except (JSONDecodeError):
         return None, None, None
         
